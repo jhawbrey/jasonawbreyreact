@@ -1,0 +1,44 @@
+.dateBox {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.dateBox_date {
+  width: 100%;
+  text-align: right;
+  border-top: 4px solid #010101;
+  padding-top: 10px;
+}
+
+.dateBox_date i, .dateBox_perfDetails i {
+  font-family: 'Playfair Display', serif;
+}
+
+.dateBox_perfDetails {
+  padding-top: 10px;
+  width: 100%;
+
+}
+
+.perfDetail {
+  display: block;
+}
+
+.schedule {
+  max-width: 90%;
+  margin:60px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .dateBox_date {
+    width: 25%;
+    float: left;
+    text-align: right;
+    margin-right: 15%;
+  }
+
+  .dateBox_perfDetails {
+    width: 60%;
+    float: left;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "boiler-app",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.5.1"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-addons-css-transition-group": "^15.3.2",
+    "react-addons-transition-group": "^15.3.2",
+    "react-burger-menu": "^1.10.10",
+    "react-dom": "^15.3.2",
+    "react-motion": "^0.4.5",
+    "react-router": "^2.8.1",
+    "react-router-transition": "0.0.6",
+    "react-soundplayer": "^0.3.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

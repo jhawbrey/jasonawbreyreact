@@ -1,0 +1,27 @@
+/*
+.nav {
+  text-align:right;
+  float: right;
+}
+
+.nav__link {
+  font-family: 'Oswald', serif;
+  font-weight: 700;
+  font-size: 23px;
+  transition: border-bottom 0.3s ease;
+  border-bottom: 1px solid #fff;
+  padding:0 0 3px 0;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+  line-height: 40px;
+}
+
+.nav__link:hover {
+  border-bottom: 1px solid #0a4675;
+}
+
+.nav__link--active {
+  border-bottom: 1px solid #0a4675;
+}
+*/
