@@ -13,6 +13,7 @@ import Audio from './components/audio/index';
 import Schedule from './components/schedule/index';
 import Header from './components/header/index';
 import Nav from './components/nav/index';
+import Footer from './components/footer/index';
 
 const NotFound = () => <h1>404.. This page is not found!</h1>
 
@@ -22,6 +23,7 @@ const Container = (props) => (
     <div className="App" id="page-wrap">
       <Header />
       {props.children}
+      <Footer />
     </div>
   </div>
 )

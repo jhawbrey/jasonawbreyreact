@@ -1,0 +1,51 @@
+.social-buttons {
+  width: 174px;
+  margin:16px auto 0 auto;
+  padding: 0;
+}
+
+.social-buttons:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.social-buttons li {
+  display: block;
+  color: #000;
+  float: left;
+  list-style-type: none;
+  margin: 0 5px;
+  width:48px;
+  height:48px;
+}
+
+.copyright {
+  clear: both;
+  color: #c9c9c9;
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 48px;
+  font-size:.8em;
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .social-buttons {
+    width: 50%;
+    float: left;
+  }
+
+  .copyright {
+    clear: none;
+    display: block;
+    float: left;
+    height: 50px;
+    font-size:.8em;
+    font-style: italic;
+    padding-top: 15px;
+    width: 48%;
+    text-align: right;
+  }
+}

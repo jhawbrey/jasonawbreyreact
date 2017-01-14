@@ -60,9 +60,8 @@ class RecentMentions extends Component {
       <div className="gridBox gridBox__messiah">
         <div className="gridBox-overlay">
           <h2 className="title">Recent<br />Mentions</h2>
-          <p className="gridBox__p">
-          <blockquote className="blockquote__recent">Jason sang with heart rending beauty and sensitivity.</blockquote>
-          </p>
+          <blockquote className="blockquote__recent"><span>Jason Awbrey sang the solo gloriously.<br /><cite>Dallas Morning News</cite></span></blockquote>
+
           <div className="cta__container">
             <a href="/about" className="cta-button button__light">See More</a>
           </div>
@@ -89,7 +88,7 @@ class PlayerContainer extends Component {
   render() {
     return (
       <div>
-        <SoundPlayerContainer resolveUrl='https://soundcloud.com/jason-awbrey/beethoven-an-die-ferne' clientId={clientId} className="group">
+        <SoundPlayerContainer resolveUrl='https://soundcloud.com/jason-awbrey/howells-a-spotless-rose' clientId={clientId} className="group">
           <Player />
         </SoundPlayerContainer>
       </div>
@@ -111,7 +110,8 @@ class Player extends Component {
         return (
             <div className="">
               <div className="flex-auto">
-                  <p className="audio__title">{track ? track.title : ''}
+                  <p className="audio__title">{track ? track.title : ''}<br />
+                    <span className="audio__composer">{track ? track.description : ''}</span>
                   </p>
               </div>
               <PlayButton className="button black btn-big button-outline button-grow bg-white circle" {...this.props} />
