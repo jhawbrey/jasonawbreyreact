@@ -99,29 +99,29 @@ class PlayerContainer extends Component {
 
 class Player extends Component {
   stopPlay() {
-      let { playing, soundCloudAudio } = this.props;
-      if (playing) {
-          soundCloudAudio.stop();
-      }
+    let { playing, soundCloudAudio } = this.props;
+    if (playing) {
+        soundCloudAudio.stop();
+    }
   }
-    render() {
-        let { track } = this.props;
+  render() {
+      let { track } = this.props;
 
-        return (
-            <div className="">
-              <div className="flex-auto">
-                  <p className="audio__title">{track ? track.title : ''}<br />
-                    <span className="audio__composer">{track ? track.description : ''}</span>
-                  </p>
-              </div>
-              <PlayButton className="button black btn-big button-outline button-grow bg-white circle" {...this.props} />
+      return (
+          <div className="">
+            <div className="flex-auto">
+                <p className="audio__title">{track ? track.title : ''}<br />
+                  <span className="audio__composer">{track ? track.description : ''}</span>
+                </p>
             </div>
-        );
-    }
+            <PlayButton className="button black btn-big button-outline button-grow bg-white circle" {...this.props} />
+          </div>
+      );
+  }
 
-    componentWillUnmount() {
-      this.stopPlay();
-    }
+  componentWillUnmount() {
+    this.stopPlay();
+  }
 }
 
 export default Home;

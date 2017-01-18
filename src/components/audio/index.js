@@ -50,8 +50,8 @@ class AudioList extends Component {
 
 class PlayerContainer extends Component {
   render() {
-    const audioPlayer = this.props.feed.map((stream, i) => {
-      return <SoundPlayerContainer resolveUrl={stream.url} clientId={clientId} key={i} className="group">
+    const audioPlayer = this.props.feed.map((audio, i) => {
+      return <SoundPlayerContainer resolveUrl={audio.url} clientId={clientId} key={i} className="group">
           <Player />
       </SoundPlayerContainer>
     });
