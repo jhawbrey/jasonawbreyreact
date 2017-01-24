@@ -1,6 +1,9 @@
 /* DEPENDENCIES */
 import React, { Component } from 'react';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-319662-4');
 
 import './normalize.css';
 import './App.css';
@@ -30,8 +33,14 @@ const Container = (props) => (
 
 class App extends Component {
   render() {
+    function fireTracking() {
+      ReactGA.set({ page: window.location.pathname });
+      ReactGA.pageview(window.location.pathname);
+      console.log('pathname: '+ window.location.pathname);
+    }
+
     return (
-      <Router history={browserHistory}>
+      <Router onUpdate={fireTracking} history={browserHistory}>
         <Route path='/' component={Container}>
           <IndexRoute component={Home} />
           <Route path='about' component={About} />
