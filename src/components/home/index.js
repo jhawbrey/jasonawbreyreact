@@ -41,12 +41,12 @@ class NextConcert extends Component {
           <h2 className="title">Next<br />Concert</h2>
 
           <p className="gridBox__p">
-          <i>Feb 26 @ 7:00pm</i><br />
-          Expressions of Love <br />
-          Orpheus Chamber Singers
+          <i>Apr 2 @ 3:00pm</i><br />
+          Roomful of Teeth <br />
+          University of Chicago
           </p>
           <div className="cta__container">
-            <a href="https://goo.gl/maps/uoDj8f4zhGs" target="_blank" className="cta-button button__light">View Map</a>
+            <a href="https://goo.gl/maps/JobD8wES3rD2" target="_blank" className="cta-button button__light">View Map</a>
           </div>
         </div>
       </div>

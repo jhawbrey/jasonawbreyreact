@@ -1,31 +1,5 @@
 [
   {
-    "organization": "Conspirare",
-    "timestamp":"2017-02-22T19:00",
-    "date": "February 22, 2017",
-    "time": "7:00 pm",
-    "title": "Texas Medal of Arts Awards",
-    "url":"http://www.conspirare.org",
-    "venue":"University of Texas at Austin",
-    "address": "",
-    "city": "Austin",
-    "country": "United States",
-    "state": "TX"
-  },
-  {
-    "organization": "Orpheus Chamber Singers",
-    "timestamp":"2017-02-26T19:00",
-    "date": "February 26, 2017",
-    "time": "7:00 pm",
-    "title": "Love Songs",
-    "url":"http://www.orpheuschambersingers.org/",
-    "venue":"Dallas City Performance Hall",
-    "address": "2520 Flora Street",
-    "city": "Dallas",
-    "country": "United States",
-    "state": "TX"
-  },
-  {
     "organization": "Roomful of Teeth",
     "timestamp":"2017-04-02T15:00",
     "date": "April 2, 2017",
@@ -36,7 +10,8 @@
     "address": "",
     "city": "Chicago",
     "country": "United States",
-    "state": "IL"
+    "state": "IL",
+    "map": "https://goo.gl/maps/JobD8wES3rD2"
   },
   {
     "organization": "Roomful of Teeth",
@@ -49,7 +24,8 @@
     "address": "",
     "city": "Kenosha",
     "country": "United States",
-    "state": "WI"
+    "state": "WI",
+    "map": "https://goo.gl/maps/puL98JsER542"
   },
   {
     "organization": "Roomful of Teeth",
@@ -62,7 +38,8 @@
     "address": "",
     "city": "Minneapolis",
     "country": "United States",
-    "state": "MN"
+    "state": "MN",
+    "map": "https://goo.gl/maps/29ZJ74ZN4us"
   },
   {
     "organization": "Roomful of Teeth",
@@ -75,7 +52,8 @@
     "address": "",
     "city": "Appleton",
     "country": "United States",
-    "state": "WI"
+    "state": "WI",
+    "map": "https://goo.gl/maps/gzvWnuTf9dy"
   },
   {
     "organization": "Roomful of Teeth",
@@ -88,7 +66,8 @@
     "address": "",
     "city": "Kalamazoo",
     "country": "United States",
-    "state": "MI"
+    "state": "MI",
+    "map": "https://goo.gl/maps/zFEBjESTnHR2"
   },
   {
     "organization": "Roomful of Teeth",
@@ -101,7 +80,8 @@
     "address": "",
     "city": "Ann Arbor",
     "country": "United States",
-    "state": "MI"
+    "state": "MI",
+    "map": "https://goo.gl/maps/7szwrSQKjAR2"
   },
   {
     "organization": "Roomful of Teeth",
@@ -114,19 +94,7 @@
     "address": "",
     "city": "Boston",
     "country": "United States",
-    "state": "MA"
-  },
-  {
-    "organization": "Orpheus Chamber Singers",
-    "timestamp":"2017-04-08T19:00",
-    "date": "April 8, 2017",
-    "time": "7:00 pm",
-    "title": "Genesis, Renaissance and Reincarnation",
-    "url":"http://www.orpheuschambersingers.org/",
-    "venue":"St. Thomas Aquinas Catholic Church",
-    "address": "6306 Kenwood Ave",
-    "city": "Dallas",
-    "country": "United States",
-    "state": "TX"
+    "state": "MA",
+    "map": "https://goo.gl/maps/YcFJHBbj3RM2"
   }
 ]
