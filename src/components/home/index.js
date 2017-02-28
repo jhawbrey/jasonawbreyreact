@@ -41,12 +41,12 @@ class NextConcert extends Component {
           <h2 className="title">Next<br />Concert</h2>
 
           <p className="gridBox__p">
-          <i>Feb 22 @ 7:00pm</i><br />
-          Texas Medal of Arts <br />
-          <i>with</i> Conspirare
+          <i>Feb 26 @ 7:00pm</i><br />
+          Expressions of Love <br />
+          Orpheus Chamber Singers
           </p>
           <div className="cta__container">
-            <a href="https://www.google.com/maps/place/2350+Robert+Dedman+Dr,+Austin,+TX+78705/@30.2861628,-97.7334325,17z/data=!3m1!4b1!4m5!3m4!1s0x8644b59a82ed08ff:0x4d247fdf5f20b9a6!8m2!3d30.2861582!4d-97.7312385" target="_blank" className="cta-button button__light">View Map</a>
+            <a href="https://goo.gl/maps/uoDj8f4zhGs" target="_blank" className="cta-button button__light">View Map</a>
           </div>
         </div>
       </div>
@@ -60,8 +60,9 @@ class RecentMentions extends Component {
       <div className="gridBox gridBox__messiah">
         <div className="gridBox-overlay">
           <h2 className="title">Recent<br />Mentions</h2>
-          <blockquote className="blockquote__recent"><span>Jason Awbrey sang the solo gloriously.<br /><cite>Dallas Morning News</cite></span></blockquote>
-
+          <p className="gridBox__p">
+          <blockquote className="blockquote__recent">Jason sang with heart rending beauty and sensitivity.</blockquote>
+          </p>
           <div className="cta__container">
             <a href="/about" className="cta-button button__light">See More</a>
           </div>
@@ -88,7 +89,7 @@ class PlayerContainer extends Component {
   render() {
     return (
       <div>
-        <SoundPlayerContainer resolveUrl='https://soundcloud.com/jason-awbrey/howells-a-spotless-rose' clientId={clientId} className="group">
+        <SoundPlayerContainer resolveUrl='https://soundcloud.com/jason-awbrey/beethoven-an-die-ferne' clientId={clientId} className="group">
           <Player />
         </SoundPlayerContainer>
       </div>
@@ -99,29 +100,29 @@ class PlayerContainer extends Component {
 
 class Player extends Component {
   stopPlay() {
-    let { playing, soundCloudAudio } = this.props;
-    if (playing) {
-        soundCloudAudio.stop();
-    }
+      let { playing, soundCloudAudio } = this.props;
+      if (playing) {
+          soundCloudAudio.stop();
+      }
   }
-  render() {
-      let { track } = this.props;
+    render() {
+        let { track } = this.props;
 
-      return (
-          <div className="">
-            <div className="flex-auto">
+        return (
+            <div className="">
+              <div className="flex-auto">
                 <p className="audio__title">{track ? track.title : ''}<br />
                   <span className="audio__composer">{track ? track.description : ''}</span>
                 </p>
+              </div>
+              <PlayButton className="button black btn-big button-outline button-grow bg-white circle" {...this.props} />
             </div>
-            <PlayButton className="button black btn-big button-outline button-grow bg-white circle" {...this.props} />
-          </div>
-      );
-  }
+        );
+    }
 
-  componentWillUnmount() {
-    this.stopPlay();
-  }
+    componentWillUnmount() {
+      this.stopPlay();
+    }
 }
 
 export default Home;
