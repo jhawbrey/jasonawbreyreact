@@ -10,6 +10,44 @@ import '../../App.css';
 const clientId = 'b66c8aeecc97de91f3ed3fa8b09d8d8c';
 
 class Home extends Component {
+  constructor(){
+    super();
+    this.state={
+      date: []
+    };
+  }
+
+  componentDidMount(){
+    fetch('./schedule.json')
+    .then((response) => response.json())
+    .then((responseData) => {
+      let date_sort_asc = (date1, date2) => {
+        let dt1 = new Date(date1);
+        let dt2 = new Date(date2);
+        if (dt1 > dt2) return 1;
+        if (dt1 < dt2) return -1;
+        return 0;
+      };
+
+      responseData.sort(date_sort_asc);
+
+      let concert = null;
+
+      for (var i = 0; i < responseData.length; i++) {
+        let cDate = new Date(responseData[i].timestamp);
+        const today = new Date();
+        if (cDate > today) {
+          concert = responseData[i];
+          break;
+        }
+      }
+      this.setState({date: concert});
+    })
+    .catch((error) => {
+      console.log('Error fetching and parsing data', error);
+    });
+  }
+
   render() {
     return (
       <RouteTransitionTemplate preset={presets.pop} {...this.props}>
@@ -22,7 +60,7 @@ class Home extends Component {
 
           <section className="callouts group">
             <div className="container">
-              <NextConcert />
+              <NextConcert feed={this.state.date} />
               <FeaturedAudio/>
               <RecentMentions/>
             </div>
@@ -34,23 +72,23 @@ class Home extends Component {
 }
 
 class NextConcert extends Component {
+  
   render() {
-    return (
-      <div className="gridBox gridBox__meyerson-full">
-        <div className="gridBox-overlay">
-          <h2 className="title">Next<br />Concert</h2>
-
-          <p className="gridBox__p">
-          <i>Apr 2 @ 3:00pm</i><br />
-          Roomful of Teeth <br />
-          University of Chicago
-          </p>
-          <div className="cta__container">
-            <a href="https://goo.gl/maps/JobD8wES3rD2" target="_blank" className="cta-button button__light">View Map</a>
-          </div>
+    const perf = this.props.feed;
+    console.log(perf);
+    return (<div className="gridBox gridBox__meyerson-full">
+      <div className="gridBox-overlay">
+        <h2 className="title">Next<br />Concert</h2>
+        <p className="gridBox__p">
+        <i>{perf.date} @ {perf.time}</i><br />
+        {perf.organization} <br />
+        {perf.venue}
+        </p>
+        <div className="cta__container">
+          <a href={perf.map} target="_blank" className="cta-button button__light">View Map</a>
         </div>
       </div>
-    )
+    </div>);
   }
 }
 
@@ -60,9 +98,7 @@ class RecentMentions extends Component {
       <div className="gridBox gridBox__messiah">
         <div className="gridBox-overlay">
           <h2 className="title">Recent<br />Mentions</h2>
-          <p className="gridBox__p">
           <blockquote className="blockquote__recent">Jason sang with heart rending beauty and sensitivity.</blockquote>
-          </p>
           <div className="cta__container">
             <a href="/about" className="cta-button button__light">See More</a>
           </div>

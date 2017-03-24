@@ -1,4 +1,4 @@
- import React, {Component} from 'react';
+import React, {Component} from 'react';
 import RouteTransitionTemplate from '../../RouteTransitionTemplate';
 import { presets } from 'react-router-transition';
 

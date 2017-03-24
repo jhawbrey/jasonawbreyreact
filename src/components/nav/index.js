@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import { elastic as Menu } from 'react-burger-menu';
+import { stack as Menu } from 'react-burger-menu';
 import Radium from 'radium';
 
 let RadiumLink = Radium(Link);
