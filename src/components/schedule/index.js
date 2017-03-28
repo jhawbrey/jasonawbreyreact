@@ -17,7 +17,26 @@ class Schedule extends Component {
     fetch('./schedule.json')
     .then((response) => response.json())
     .then((responseData) => {
-      this.setState({dates: responseData});
+      let date_sort_asc = (date1, date2) => {
+        let dt1 = new Date(date1);
+        let dt2 = new Date(date2);
+        if (dt1 > dt2) return 1;
+        if (dt1 < dt2) return -1;
+        return 0;
+      };
+
+      responseData.sort(date_sort_asc);
+
+      let concerts = [];
+
+      for (var i = 0; i < responseData.length; i++) {
+        let cDate = new Date(responseData[i].timestamp);
+        const today = new Date();
+        if (cDate > today) {
+          concerts.push(responseData[i]);
+        }
+      }
+      this.setState({dates: concerts});
     })
     .catch((error) => {
       console.log('Error fetching and parsing data', error);
@@ -35,7 +54,6 @@ class Schedule extends Component {
           </div>
           <div className="container">
             <div className="schedule">
-
               <DateContainer feed={this.state.dates} />
             </div>
           </div>
@@ -62,7 +80,6 @@ class DateContainer extends Component {
         {performance}
       </div>
     )
-
   }
 }
 
