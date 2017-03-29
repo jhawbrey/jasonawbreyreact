@@ -71,7 +71,6 @@ class Player extends Component {
       }
   }
     render() {
-      console.log(this.props);
         let { currentTime, duration } = this.props;
         let info = this.props.feed;
 

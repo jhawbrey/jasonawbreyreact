@@ -36,7 +36,6 @@ class App extends Component {
     function fireTracking() {
       ReactGA.set({ page: window.location.pathname });
       ReactGA.pageview(window.location.pathname);
-      console.log('pathname: '+ window.location.pathname);
     }
 
     return (
