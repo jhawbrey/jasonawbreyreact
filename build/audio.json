@@ -1,10 +1,37 @@
 [
-  { "url": "https://soundcloud.com/jason-awbrey/bach-bwv-117-wenn-trost-und-hulf-ermangeln-mus" },
-  { "url": "https://soundcloud.com/jason-awbrey/beethoven-an-die-ferne" },
-  { "url": "https://soundcloud.com/jason-awbrey/howells-a-spotless-rose" },
-  { "url": "https://soundcloud.com/jason-awbrey/howells-requiem-psalm-121" },
-  { "url": "https://soundcloud.com/jason-awbrey/handel-why-do-the-nations-so" },
-  { "url": "https://soundcloud.com/jason-awbrey/bach-gottes-zeit-ist-die" },
-  { "url": "https://soundcloud.com/jason-awbrey/bach-gottes-zeit-ist-die-1" },
-  { "url": "https://soundcloud.com/jason-awbrey/schubert-trockne-blumen" }
+  { 
+    "title": "BWV 117: Wenn Trost und Hülf ermangeln muß",
+    "description": "J.S. Bach", 
+    "url": "https://api.soundcloud.com/tracks/277988890/stream"
+  },
+  { 
+    "title": "An Die Ferne Geliebte",
+    "description": "Ludwig van Beethoven",
+    "url": "https://api.soundcloud.com/tracks/108565950/stream"
+  },
+    { 
+    "title": "A Spotless Rose",
+    "description": "Herbert Howells",
+    "url": "https://api.soundcloud.com/tracks/100312444/stream"
+  },
+    { 
+    "title": "Requiem: Psalm 121",
+    "description": "Herbert Howells",
+    "url": "https://api.soundcloud.com/tracks/49742665/stream"
+  },
+    { 
+    "title": "BWV 106: Bestelle dein Haus",
+    "description": "J.S. Bach",
+    "url": "https://api.soundcloud.com/tracks/43372289/stream"
+  },
+    { 
+    "title": "BWV 106: Heute wirst du mit mir im Paradies sein",
+    "description": "J.S. Bach",
+    "url": "https://api.soundcloud.com/tracks/43372638/stream"
+  },
+    { 
+    "title": "Trockne Blumen",
+    "description": "Franz Schubert",
+    "url": "https://api.soundcloud.com/tracks/108500732/stream"
+  }
 ]

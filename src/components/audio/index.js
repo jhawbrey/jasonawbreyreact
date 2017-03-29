@@ -51,8 +51,8 @@ class AudioList extends Component {
 class PlayerContainer extends Component {
   render() {
     const audioPlayer = this.props.feed.map((audio, i) => {
-      return <SoundPlayerContainer resolveUrl={audio.url} clientId={clientId} key={i} className="group">
-          <Player />
+      return <SoundPlayerContainer streamUrl={audio.url} clientId={clientId} key={i} className="group">
+          <Player feed={audio} />
       </SoundPlayerContainer>
     });
     return (
@@ -60,7 +60,6 @@ class PlayerContainer extends Component {
         {audioPlayer}
       </div>
     )
-
   }
 }
 
@@ -72,14 +71,16 @@ class Player extends Component {
       }
   }
     render() {
-        let { track, currentTime, duration } = this.props;
+      console.log(this.props);
+        let { currentTime, duration } = this.props;
+        let info = this.props.feed;
 
         return (
             <div className="player__container p2 border mt1 mb3 flex flex-center rounded">
                 <PlayButton className="flex-none h4 mr2 button white btn-big button-outline button-grow bg-black circle" {...this.props} />
                 <div className="flex-auto">
-                    <h2 className="h4 m0 trackTitle">{track ? track.title : ''}</h2>
-                    <p className="h5 m0 trackComposer">{track ? track.description : ''}</p>
+                    <h2 className="h4 m0 trackTitle">{info ? info.title : ''}</h2>
+                    <p className="h5 m0 trackComposer">{info ? info.description : ''}</p>
                     <Progress
                         className="mt1 mb1 rounded"
                         innerClassName="rounded-left"
