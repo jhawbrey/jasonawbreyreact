@@ -13,6 +13,7 @@ class Schedule extends Component {
       pastDates: []
     };
   }
+  
 
   componentDidMount(){
     fetch('./schedule.json')
@@ -31,6 +32,14 @@ class Schedule extends Component {
           pastConcerts.push(responseData[i]);
         }
       }
+
+      pastConcerts.sort(function(a,b){
+        return new Date(b.timestamp) - new Date(a.timestamp);
+      });
+
+      concerts.sort(function(a,b){
+        return new Date(a.timestamp) - new Date(b.timestamp);
+      });
       
       this.setState({dates: concerts, pastDates: pastConcerts});
     })
