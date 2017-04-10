@@ -1,7 +1,7 @@
 [
   {
     "organization": "Conspirare",
-    "timestamp": "2016-07-23T20:00",
+    "timestamp": "2016-07-23T20:00-05:00",
     "date": "Jul 26 - 31, 2016",
     "time": "",
     "title": "Olavsfestdagene",
@@ -15,7 +15,7 @@
   },
   {
     "organization": "Vox Humana",
-    "timestamp": "2016-09-11T20:00",
+    "timestamp": "2016-09-11T20:00-05:00",
     "date": "Sep 11, 2016",
     "time": "8:00 pm",
     "title": "",
@@ -29,7 +29,7 @@
   },
   {
     "organization": "Vox Humana",
-    "timestamp": "2016-09-12T20:00",
+    "timestamp": "2016-09-12T20:00-05:00",
     "date": "Sep 12, 2016",
     "time": "8:00 pm",
     "title": "",
@@ -43,7 +43,7 @@
   },
   {
     "organization": "Orpheus Chamber Singers",
-    "timestamp": "2016-10-16T20:00",
+    "timestamp": "2016-10-16T20:00-05:00",
     "date": "oct 16, 2016",
     "time": "8:00 pm",
     "title": "",
@@ -58,7 +58,7 @@
   
   {
     "organization": "Church of the Transfiguration",
-    "timestamp": "2016-11-02T20:00",
+    "timestamp": "2016-11-02T20:00-05:00",
     "date": "Nov 2, 2016",
     "time": "8:00 pm",
     "title": "Fauré Requiem",
@@ -72,7 +72,7 @@
   },
   {
     "organization": "Vox Humana",
-    "timestamp": "2016-12-03T20:00",
+    "timestamp": "2016-12-03T20:00-05:00",
     "date": "Dec 3, 2016",
     "time": "8:00 pm",
     "title": "",
@@ -86,7 +86,7 @@
   },
   {
     "organization": "Vox Humana",
-    "timestamp": "2016-12-04T18:00",
+    "timestamp": "2016-12-04T18:00-05:00",
     "date": "Dec 4, 2016",
     "time": "6:00 pm",
     "title": "",
@@ -100,7 +100,7 @@
   },
   {
     "organization": "CCGD / GDYO",
-    "timestamp": "2016-12-14T19:30",
+    "timestamp": "2016-12-14T19:30-05:00",
     "date": "Dec 14, 2016",
     "time": "7:30 pm",
     "title": "RVW Fantaisa on Christmas Carols",
@@ -114,7 +114,7 @@
   },
   {
     "organization": "Orpheus Chamber Singers",
-    "timestamp": "2016-12-17T19:30",
+    "timestamp": "2016-12-17T19:30-05:00",
     "date": "Dec 17, 2016",
     "time": "7:30 pm",
     "title": "",
@@ -128,7 +128,7 @@
   },
   {
     "organization": "Orpheus Chamber Singers",
-    "timestamp": "2016-12-18T19:30",
+    "timestamp": "2016-12-18T19:30-05:00",
     "date": "Dec 18, 2016",
     "time": "7:30 pm",
     "title": "",
@@ -142,7 +142,7 @@
   },
   {
     "organization": "Orpheus Chamber Singers",
-    "timestamp": "2016-12-20T19:30",
+    "timestamp": "2016-12-20T19:30-05:00",
     "date": "Dec 20, 2016",
     "time": "7:30 pm",
     "title": "",
@@ -156,7 +156,7 @@
   },
   {
     "organization": "Conspirare",
-    "timestamp": "2017-02-22T19:30",
+    "timestamp": "2017-02-22T19:30-05:00",
     "date": "Feb 22, 2017",
     "time": "7:30 pm",
     "title": "",
@@ -170,7 +170,7 @@
   },
   {
     "organization": "Orpheus Chamber Singers",
-    "timestamp": "2017-02-26T19:30",
+    "timestamp": "2017-02-26T19:30-05:00",
     "date": "Feb 26, 2017",
     "time": "7:30 pm",
     "title": "",
@@ -184,7 +184,7 @@
   },
   {
     "organization": "Roomful of Teeth",
-    "timestamp": "2017-04-02T15:00",
+    "timestamp": "2017-04-02T15:00-05:00",
     "date": "Apr 2, 2017",
     "time": "3:00 pm",
     "title": "",
@@ -198,7 +198,7 @@
   },
   {
     "organization": "Roomful of Teeth",
-    "timestamp": "2017-04-03T19:30",
+    "timestamp": "2017-04-03T19:30-05:00",
     "date": "Apr 3, 2017",
     "time": "7:30 pm",
     "title": "",
@@ -212,7 +212,7 @@
   },
   {
     "organization": "Roomful of Teeth",
-    "timestamp": "2017-04-05T19:30",
+    "timestamp": "2017-04-05T19:30-05:00",
     "date": "Apr 5, 2017",
     "time": "7:30 pm",
     "title": "",
@@ -226,7 +226,7 @@
   },
   {
     "organization": "Roomful of Teeth",
-    "timestamp": "2017-04-07T20:00",
+    "timestamp": "2017-04-07T20:00-05:00",
     "date": "Apr 7, 2017",
     "time": "8:00 pm",
     "title": "",
@@ -240,12 +240,12 @@
   },
   {
     "organization": "Roomful of Teeth",
-    "timestamp": "2017-04-09T19:30",
+    "timestamp": "2017-04-09T19:30-05:00",
     "date": "Apr 9, 2017",
     "time": "7:30 pm",
     "title": "",
     "url":"http://www.roomfulofteeth.org/",
-    "venue":"Western Michigan University",
+    "venue":"Western Michigan Univ",
     "address": "",
     "city": "Kalamazoo",
     "country": "United States",
@@ -254,12 +254,12 @@
   },
   {
     "organization": "Roomful of Teeth",
-    "timestamp": "2017-04-12T11:00",
+    "timestamp": "2017-04-12T11:00-05:00",
     "date": "Apr 12, 2017",
     "time": "11:00 am",
     "title": "",
     "url":"http://www.roomfulofteeth.org/",
-    "venue":"University of Michigan (with A Far Cry)",
+    "venue":"University of Michigan",
     "address": "",
     "city": "Ann Arbor",
     "country": "United States",
@@ -268,12 +268,12 @@
   },
   {
     "organization": "Roomful of Teeth",
-    "timestamp": "2017-04-13T20:00",
+    "timestamp": "2017-04-13T20:00-05:00",
     "date": "Apr 13, 2017",
     "time": "8:00 pm",
     "title": "",
     "url":"http://www.roomfulofteeth.org/",
-    "venue":"Celebrity Series (with A Far Cry)",
+    "venue":"Celebrity Series",
     "address": "",
     "city": "Boston",
     "country": "United States",
