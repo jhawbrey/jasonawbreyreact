@@ -59,7 +59,12 @@ class Schedule extends Component {
           </div>
           <div className="container">
             <div className="schedule">
+            {this.state.dates.length > 0 &&
               <DateContainer feed={this.state.dates} />
+            }
+            {this.state.dates.length === 0 &&
+              <h3>Check back soon for upcoming events.</h3>
+            }
             </div>
             <div className="schedule">
               <h2 className="title">Past Engagements</h2>
@@ -74,6 +79,7 @@ class Schedule extends Component {
 
 class DateContainer extends Component {
   render() {
+    console.log(this.props.feed);
     const performance = this.props.feed.map((perf, i) => {
       return <div className="dateBox group" key={i}>
         <div className="dateBox_date">{perf.date}<br /><i>{perf.time}</i></div>
@@ -95,6 +101,7 @@ class DateContainer extends Component {
 class PastContainer extends Component {
   
   render() {
+    console.log(this.props.feed);
     const performance = this.props.feed.map((perf, i) => {
       return <div className="dateBox group past" key={i}>
         <div className="dateBox_date">{perf.date}<br /><i>{perf.time}</i></div>

@@ -78,14 +78,28 @@ class NextConcert extends Component {
     return (<div className="gridBox gridBox__meyerson-full">
       <div className="gridBox-overlay">
         <h2 className="title">Next<br />Concert</h2>
-        <p className="gridBox__p">
-        <i>{perf.date} @ {perf.time}</i><br />
-        {perf.organization} <br />
-        {perf.venue}
-        </p>
-        <div className="cta__container">
-          <a href={perf.map} target="_blank" className="cta-button button__light">View Map</a>
+      {this.props.feed.length > 0 &&
+        <div>
+          <p className="gridBox__p">
+          <i>{perf.date} @ {perf.time}</i><br />
+          {perf.organization} <br />
+          {perf.venue}
+          </p>
+          <div className="cta__container">
+            <a href={perf.map} target="_blank" className="cta-button button__light">View Map</a>
+          </div>
         </div>
+      }
+      {this.props.feed.length === 0 &&
+        <div>
+          <p>
+            <i>Check back soon for upcoming events.</i>
+          </p>
+          <div className="cta__container">
+            <a href="/schedule" target="_blank" className="cta-button button__light">Past Events</a>
+          </div>
+        </div>
+      }
       </div>
     </div>);
   }
