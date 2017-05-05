@@ -75,10 +75,11 @@ class NextConcert extends Component {
   
   render() {
     const perf = this.props.feed;
+    console.log(perf);
     return (<div className="gridBox gridBox__meyerson-full">
       <div className="gridBox-overlay">
         <h2 className="title">Next<br />Concert</h2>
-      {this.props.feed.length > 0 &&
+      {perf.date &&
         <div>
           <p className="gridBox__p">
           <i>{perf.date} @ {perf.time}</i><br />
