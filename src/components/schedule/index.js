@@ -13,7 +13,7 @@ class Schedule extends Component {
       pastDates: []
     };
   }
-  
+
 
   componentDidMount(){
     fetch('./schedule.json')
@@ -33,6 +33,7 @@ class Schedule extends Component {
         }
       }
 
+
       pastConcerts.sort(function(a,b){
         return new Date(b.timestamp) - new Date(a.timestamp);
       });
@@ -40,7 +41,7 @@ class Schedule extends Component {
       concerts.sort(function(a,b){
         return new Date(a.timestamp) - new Date(b.timestamp);
       });
-      
+
       this.setState({dates: concerts, pastDates: pastConcerts});
     })
     .catch((error) => {
@@ -79,7 +80,6 @@ class Schedule extends Component {
 
 class DateContainer extends Component {
   render() {
-    console.log(this.props.feed);
     const performance = this.props.feed.map((perf, i) => {
       return <div className="dateBox group" key={i}>
         <div className="dateBox_date">{perf.date}<br /><i>{perf.time}</i></div>
@@ -99,9 +99,8 @@ class DateContainer extends Component {
 }
 
 class PastContainer extends Component {
-  
+
   render() {
-    console.log(this.props.feed);
     const performance = this.props.feed.map((perf, i) => {
       return <div className="dateBox group past" key={i}>
         <div className="dateBox_date">{perf.date}<br /><i>{perf.time}</i></div>

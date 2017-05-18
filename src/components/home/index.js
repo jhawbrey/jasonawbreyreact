@@ -36,6 +36,7 @@ class Home extends Component {
       for (var i = 0; i < responseData.length; i++) {
         let cDate = new Date(responseData[i].timestamp);
         const today = new Date();
+        console.log(cDate);
         if (cDate > today) {
           concert = responseData[i];
           break;
@@ -75,7 +76,6 @@ class NextConcert extends Component {
   
   render() {
     const perf = this.props.feed;
-    console.log(perf);
     return (<div className="gridBox gridBox__meyerson-full">
       <div className="gridBox-overlay">
         <h2 className="title">Next<br />Concert</h2>
