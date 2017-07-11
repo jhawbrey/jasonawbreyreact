@@ -55,7 +55,7 @@
     "state": "TX",
     "map": ""
   },
-  
+
   {
     "organization": "Church of the Transfiguration",
     "timestamp": "2016-11-02T20:00-05:00",
@@ -320,5 +320,103 @@
     "country": "Canada",
     "state": "QC",
     "map": "https://goo.gl/maps/U8QadzqVGLr"
+  },
+  {
+    "organization": "Orpheus Chamber Singers",
+    "timestamp": "2017-10-13T20:00-06:00",
+    "date": "Oct 13, 2017",
+    "time": "8:00 pm",
+    "title": "Orpheus & The King of Instruments",
+    "url":"http://www.orpheuschambersingers.org/",
+    "venue":"TBA",
+    "address": "",
+    "city": "Dallas",
+    "country": "United States",
+    "state": "Texas",
+    "map": ""
+  },
+  {
+    "organization": "Transfiguration Choir",
+    "timestamp": "2017-11-02T19:00-06:00",
+    "date": "Nov 2, 2017",
+    "time": "7:00 pm",
+    "title": "Duruflé Requiem",
+    "url":"http://www.transfiguration.net/transfigured-nights/",
+    "venue":"TBA",
+    "address": "",
+    "city": "Dallas",
+    "country": "United States",
+    "state": "Texas",
+    "map": ""
+  },
+  {
+    "organization": "Orpheus Chamber Singers",
+    "timestamp": "2017-10-14T20:00-06:00",
+    "date": "Dec 14, 2017",
+    "time": "8:00 pm",
+    "title": "A British Christmas",
+    "url":"http://www.orpheuschambersingers.org/",
+    "venue":"TBA",
+    "address": "",
+    "city": "Dallas",
+    "country": "United States",
+    "state": "Texas",
+    "map": ""
+  },
+  {
+    "organization": "Orpheus Chamber Singers",
+    "timestamp": "2017-12-16T19:00-06:00",
+    "date": "Dec 16, 2017",
+    "time": "7:00 pm",
+    "title": "A British Christmas",
+    "url":"http://www.orpheuschambersingers.org/",
+    "venue":"TBA",
+    "address": "",
+    "city": "Dallas",
+    "country": "United States",
+    "state": "Texas",
+    "map": ""
+  },
+  {
+    "organization": "Orpheus Chamber Singers",
+    "timestamp": "2017-12-17T19:00-06:00",
+    "date": "Dec 17, 2017",
+    "time": "7:00 pm",
+    "title": "A British Christmas",
+    "url":"http://www.orpheuschambersingers.org/",
+    "venue":"TBA",
+    "address": "",
+    "city": "Dallas",
+    "country": "United States",
+    "state": "Texas",
+    "map": ""
+  },
+  {
+    "organization": "Orpheus Chamber Singers",
+    "timestamp": "2018-03-03T20:00-06:00",
+    "date": "Mar 3, 2018",
+    "time": "8:00 pm",
+    "title": "Luminocity",
+    "url":"http://www.orpheuschambersingers.org/",
+    "venue":"TBA",
+    "address": "",
+    "city": "Dallas",
+    "country": "United States",
+    "state": "Texas",
+    "map": ""
+  },
+  {
+    "organization": "Orpheus Chamber Singers",
+    "timestamp": "2018-04-29T20:00-06:00",
+    "date": "Apr 29, 2018",
+    "time": "8:00 pm",
+    "title": "Choral Currents: 21st Century",
+    "url":"http://www.orpheuschambersingers.org/",
+    "venue":"TBA",
+    "address": "",
+    "city": "Dallas",
+    "country": "United States",
+    "state": "Texas",
+    "map": ""
   }
 ]
