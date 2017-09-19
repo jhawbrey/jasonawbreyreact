@@ -328,12 +328,12 @@
     "time": "8:00 pm",
     "title": "Orpheus & The King of Instruments",
     "url":"http://www.orpheuschambersingers.org/",
-    "venue":"TBA",
-    "address": "",
+    "venue":"Church of the Incarnation",
+    "address": "3966 McKinney Avenue",
     "city": "Dallas",
     "country": "United States",
     "state": "Texas",
-    "map": ""
+    "map": "https://goo.gl/maps/S3UQua2B56y"
   },
   {
     "organization": "Transfiguration Choir",
@@ -342,12 +342,26 @@
     "time": "7:00 pm",
     "title": "Duruflé Requiem",
     "url":"http://www.transfiguration.net/transfigured-nights/",
-    "venue":"TBA",
-    "address": "",
+    "venue":"Church of the Transfiguration",
+    "address": "14115 Hillcrest Road",
     "city": "Dallas",
     "country": "United States",
     "state": "Texas",
-    "map": ""
+    "map": "https://goo.gl/maps/jBizAiinbwJ2"
+  },
+  {
+    "organization": "Arlington Heights UMC Orchestra & Choir",
+    "timestamp": "2017-12-10T19:00-06:00",
+    "date": "Dec 10, 2017",
+    "time": "7:00 pm",
+    "title": "Handel Messiah",
+    "url":"",
+    "venue":"Arlington Heights UMC",
+    "address": "4200 Camp Bowie Blvd",
+    "city": "Ft Worth",
+    "country": "United States",
+    "state": "Texas",
+    "map": "https://goo.gl/maps/8YT2mYgPCoP2"
   },
   {
     "organization": "Orpheus Chamber Singers",
@@ -356,12 +370,12 @@
     "time": "8:00 pm",
     "title": "A British Christmas",
     "url":"http://www.orpheuschambersingers.org/",
-    "venue":"TBA",
-    "address": "",
-    "city": "Dallas",
+    "venue":"Custer Road UMC",
+    "address": "6601 Custer Road",
+    "city": "Plano",
     "country": "United States",
     "state": "Texas",
-    "map": ""
+    "map": "https://goo.gl/maps/5EbwNcSo6v82"
   },
   {
     "organization": "Orpheus Chamber Singers",
@@ -370,12 +384,12 @@
     "time": "7:00 pm",
     "title": "A British Christmas",
     "url":"http://www.orpheuschambersingers.org/",
-    "venue":"TBA",
-    "address": "",
+    "venue":"St Thomas Acquinas Catholic Church",
+    "address": "6306 Kenwood Avenue",
     "city": "Dallas",
     "country": "United States",
     "state": "Texas",
-    "map": ""
+    "map": "https://goo.gl/maps/7E54EaUyMsB2"
   },
   {
     "organization": "Orpheus Chamber Singers",
@@ -384,12 +398,12 @@
     "time": "7:00 pm",
     "title": "A British Christmas",
     "url":"http://www.orpheuschambersingers.org/",
-    "venue":"TBA",
-    "address": "",
+    "venue":"Episcopal School of Dallas",
+    "address": "4100 Merrell Road",
     "city": "Dallas",
     "country": "United States",
     "state": "Texas",
-    "map": ""
+    "map": "https://goo.gl/maps/JVUkNRQKmzR2"
   },
   {
     "organization": "Orpheus Chamber Singers",
@@ -398,12 +412,12 @@
     "time": "8:00 pm",
     "title": "Luminocity",
     "url":"http://www.orpheuschambersingers.org/",
-    "venue":"TBA",
-    "address": "",
+    "venue":"St Thomas Acquinas Catholic Church",
+    "address": "6306 Kenwood Avenue",
     "city": "Dallas",
     "country": "United States",
     "state": "Texas",
-    "map": ""
+    "map": "https://goo.gl/maps/7E54EaUyMsB2"
   },
   {
     "organization": "Orpheus Chamber Singers",
@@ -412,11 +426,11 @@
     "time": "8:00 pm",
     "title": "Choral Currents: 21st Century",
     "url":"http://www.orpheuschambersingers.org/",
-    "venue":"TBA",
-    "address": "",
+    "venue":"Cliff Temple Baptist Church",
+    "address": "125 Sunset Avenue",
     "city": "Dallas",
     "country": "United States",
     "state": "Texas",
-    "map": ""
+    "map": "https://goo.gl/maps/MM2WKtHA3Du"
   }
 ]

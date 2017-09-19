@@ -139,7 +139,7 @@ class PlayerContainer extends Component {
   render() {
     return (
       <div>
-        <SoundPlayerContainer streamUrl='https://api.soundcloud.com/tracks/108565950/stream' clientId={clientId} className='group'>
+        <SoundPlayerContainer streamUrl='https://api.soundcloud.com/tracks/320439670/stream' clientId={clientId} className='group'>
           <Player />
         </SoundPlayerContainer>
       </div>
@@ -159,8 +159,8 @@ class Player extends Component {
         return (
             <div className="">
               <div className="flex-auto">
-                <p className="audio__title">An Die Ferne Geliebte<br />
-                  <span className="audio__composer"><i>Ludwig van Beethoven</i></span>
+                <p className="audio__title">Chanson Romanesque<br />
+                  <span className="audio__composer"><i>Maurice Ravel</i></span>
                 </p>
               </div>
               <PlayButton className="button black btn-big button-outline button-grow bg-white circle" {...this.props} />
