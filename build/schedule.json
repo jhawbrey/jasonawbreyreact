@@ -350,6 +350,20 @@
     "map": "https://goo.gl/maps/jBizAiinbwJ2"
   },
   {
+    "organization": "Roomful of Teeth",
+    "timestamp": "2017-12-07T19:30-06:00",
+    "date": "Dec 7, 2017",
+    "time": "7:30 pm",
+    "title": "Season of Light",
+    "url":"http://gracefarms.org/events/capella-performance-roomful-teeth/",
+    "venue":"Grace Farms, Sanctuary",
+    "address": "365 Lukes Wood Road",
+    "city": "New Canaan",
+    "country": "United States",
+    "state": "Connecticut",
+    "map": "https://goo.gl/maps/mVt6XLnyr8u"
+  },
+  {
     "organization": "Arlington Heights UMC Orchestra & Choir",
     "timestamp": "2017-12-10T19:00-06:00",
     "date": "Dec 10, 2017",
@@ -365,7 +379,7 @@
   },
   {
     "organization": "Orpheus Chamber Singers",
-    "timestamp": "2017-10-14T20:00-06:00",
+    "timestamp": "2017-12-14T20:00-06:00",
     "date": "Dec 14, 2017",
     "time": "8:00 pm",
     "title": "A British Christmas",

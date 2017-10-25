@@ -83,8 +83,8 @@ class NextConcert extends Component {
         <div>
           <p className="gridBox__p">
           <i>{perf.date} @ {perf.time}</i><br />
-          {perf.organization} <br />
-          {perf.venue}
+          {perf.title} <br />
+          {perf.organization}
           </p>
           <div className="cta__container">
             <a href={perf.map} target="_blank" className="cta-button button__light">View Map</a>

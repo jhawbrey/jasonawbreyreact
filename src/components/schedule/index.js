@@ -84,7 +84,8 @@ class DateContainer extends Component {
       return <div className="dateBox group" key={i}>
         <div className="dateBox_date">{perf.date}<br /><i>{perf.time}</i></div>
         <div className="dateBox_perfDetails">
-          <span className="perfDetail perfOrg">{perf.organization}</span>
+        <span className="perfDetail perfOrg">{perf.organization}</span>
+          <span className="perfDetail perfOrg">{perf.title}</span>
           <span className="perfDetail perfVenue">{perf.venue}</span>
           <span className="perfDetail perfCitySt"><i>{perf.city}, {perf.state}</i></span>
         </div>
@@ -105,7 +106,8 @@ class PastContainer extends Component {
       return <div className="dateBox group past" key={i}>
         <div className="dateBox_date">{perf.date}<br /><i>{perf.time}</i></div>
         <div className="dateBox_perfDetails">
-          <span className="perfDetail perfOrg">{perf.organization}</span>
+        <span className="perfDetail perfOrg">{perf.organization}</span>
+          <span className="perfDetail perfOrg">{perf.title}</span>
           <span className="perfDetail perfVenue">{perf.venue}</span>
           <span className="perfDetail perfCitySt"><i>{perf.city}, {perf.state}</i></span>
         </div>
