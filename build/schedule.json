@@ -351,7 +351,7 @@
   },
   {
     "organization": "Roomful of Teeth",
-    "timestamp": "2017-12-07T19:30-06:00",
+    "timestamp": "2017-12-07T19:30-05:00",
     "date": "Dec 7, 2017",
     "time": "7:30 pm",
     "title": "Season of Light",
@@ -362,6 +362,20 @@
     "country": "United States",
     "state": "Connecticut",
     "map": "https://goo.gl/maps/mVt6XLnyr8u"
+  },
+  {
+    "organization": "Roomful of Teeth",
+    "timestamp": "2017-12-09T15:00-05:00",
+    "date": "Dec 9, 2017",
+    "time": "3:00 pm",
+    "title": "",
+    "url":"https://princetongleeclub.com/schedule/",
+    "venue":"Princeton University",
+    "address": "68 Nassau St",
+    "city": "Princeton",
+    "country": "United States",
+    "state": "New Jersey",
+    "map": "https://goo.gl/maps/MP8xPuNWPr92"
   },
   {
     "organization": "Arlington Heights UMC Orchestra & Choir",
