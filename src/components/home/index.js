@@ -112,7 +112,7 @@ class RecentMentions extends Component {
       <div className="gridBox gridBox__messiah">
         <div className="gridBox-overlay">
           <h2 className="title">Recent<br />Mentions</h2>
-          <blockquote className="blockquote__recent">Jason sang with heart rending beauty and sensitivity.</blockquote>
+          <blockquote className="blockquote__recent">Elegantly <br />comanding</blockquote>
           <div className="cta__container">
             <a href="/about" className="cta-button button__light">See More</a>
           </div>
@@ -139,7 +139,7 @@ class PlayerContainer extends Component {
   render() {
     return (
       <div>
-        <SoundPlayerContainer streamUrl='https://api.soundcloud.com/tracks/320439670/stream' clientId={clientId} className='group'>
+        <SoundPlayerContainer streamUrl='https://api.soundcloud.com/tracks/378472529/stream' clientId={clientId} className='group'>
           <Player />
         </SoundPlayerContainer>
       </div>
@@ -159,8 +159,8 @@ class Player extends Component {
         return (
             <div className="">
               <div className="flex-auto">
-                <p className="audio__title">Chanson Romanesque<br />
-                  <span className="audio__composer"><i>Maurice Ravel</i></span>
+                <p className="audio__title">Fantasia Christmas Carols<br />
+                  <span className="audio__composer"><i>Ralph Vaughan Williams</i></span>
                 </p>
               </div>
               <PlayButton className="button black btn-big button-outline button-grow bg-white circle" {...this.props} />
