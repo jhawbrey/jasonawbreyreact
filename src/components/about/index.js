@@ -48,6 +48,7 @@ class About extends Component {
             <img className="head_img" src="./images/jason-sq.jpg" alt="Jason Awbrey" />
               <div className="copy">
                 <span dangerouslySetInnerHTML={{__html: this.state.bio}} />
+
                 <div className="quotes">
                   <h2 className="title">Press</h2>
                   <QuoteList feed={this.state.quotes} />
