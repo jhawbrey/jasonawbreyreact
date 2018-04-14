@@ -18,9 +18,10 @@ class Home extends Component {
   }
 
   componentDidMount(){
-    fetch('./schedule.json')
+    fetch('https://cdn.contentful.com/spaces/lfibhjwf8l76/entries?access_token=ac626e994db36e47fed21fc5d5b5c2019df79ac53a77d06ee13b3163ef7af3a0&content_type=organization')
     .then((response) => response.json())
     .then((responseData) => {
+      let items = responseData.items;
       let date_sort_asc = (date1, date2) => {
         let dt1 = new Date(date1);
         let dt2 = new Date(date2);
@@ -29,16 +30,16 @@ class Home extends Component {
         return 0;
       };
 
-      responseData.sort(date_sort_asc);
+      items.sort(date_sort_asc);
 
       let concert = null;
 
-      for (var i = 0; i < responseData.length; i++) {
-        let cDate = new Date(responseData[i].timestamp);
+      for (var i = 0; i < items.length; i++) {
+        let cDate = new Date(items[i].fields.timestamp);
         const today = new Date();
         console.log(cDate);
         if (cDate > today) {
-          concert = responseData[i];
+          concert = items[i].fields;
           break;
         }
       }
@@ -50,6 +51,7 @@ class Home extends Component {
   }
 
   render() {
+    console.log(this.state.date);
     return (
       <RouteTransitionTemplate preset={presets.pop} {...this.props}>
         <div className="page">
@@ -76,6 +78,7 @@ class NextConcert extends Component {
   
   render() {
     const perf = this.props.feed;
+    console.log(perf);
     return (<div className="gridBox gridBox__meyerson-full">
       <div className="gridBox-overlay">
         <h2 className="title">Next<br />Concert</h2>

@@ -18,10 +18,11 @@ class AudioList extends Component {
   }
 
   componentDidMount(){
-    fetch('./audio.json')
+    fetch('https://cdn.contentful.com/spaces/lfibhjwf8l76/entries?access_token=ac626e994db36e47fed21fc5d5b5c2019df79ac53a77d06ee13b3163ef7af3a0&content_type=audio')
     .then((response) => response.json())
     .then((responseData) => {
-      this.setState({streams: responseData});
+      let items = responseData.items;
+      this.setState({streams: items});
     })
     .catch((error) => {
       console.log('Error fetching and parsing data', error);
@@ -51,7 +52,7 @@ class AudioList extends Component {
 class PlayerContainer extends Component {
   render() {
     const audioPlayer = this.props.feed.map((audio, i) => {
-      return <SoundPlayerContainer streamUrl={audio.url} clientId={clientId} key={i} className="group">
+      return <SoundPlayerContainer streamUrl={audio.fields.url} clientId={clientId} key={i} className="group">
           <Player feed={audio} />
       </SoundPlayerContainer>
     });
@@ -78,8 +79,8 @@ class Player extends Component {
             <div className="player__container p2 border mt1 mb3 flex flex-center rounded">
                 <PlayButton className="flex-none h4 mr2 button white btn-big button-outline button-grow bg-black circle" {...this.props} />
                 <div className="flex-auto">
-                    <h2 className="h4 m0 trackTitle">{info ? info.title : ''}</h2>
-                    <p className="h5 m0 trackComposer">{info ? info.description : ''}</p>
+                    <h2 className="h4 m0 trackTitle">{info ? info.fields.title : ''}</h2>
+                    <p className="h5 m0 trackComposer">{info ? info.fields.description : ''}</p>
                     <Progress
                         className="mt1 mb1 rounded"
                         innerClassName="rounded-left"

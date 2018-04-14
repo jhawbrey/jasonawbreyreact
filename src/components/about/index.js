@@ -13,16 +13,28 @@ class About extends Component {
     };
   }
   componentDidMount(){
-    fetch('./quotes.json')
+    fetch('https://cdn.contentful.com/spaces/lfibhjwf8l76/entries?access_token=ac626e994db36e47fed21fc5d5b5c2019df79ac53a77d06ee13b3163ef7af3a0&content_type=reviews')
     .then((response) => response.json())
     .then((responseData) => {
-      this.setState({quotes: responseData});
+      let items = responseData.items;
+      this.setState({quotes: items});
+    })
+    .catch((error) => {
+      console.log('Error fetching and parsing data', error);
+    });
+    
+    fetch('https://cdn.contentful.com/spaces/lfibhjwf8l76/entries?access_token=ac626e994db36e47fed21fc5d5b5c2019df79ac53a77d06ee13b3163ef7af3a0&content_type=bio')
+    .then((response) => response.json())
+    .then((responseData) => {
+      let bio = responseData.items;
+      this.setState({bio: bio[0].fields.bio});
     })
     .catch((error) => {
       console.log('Error fetching and parsing data', error);
     });
   }
   render() {
+    console.log(this.state.quotes);
     return (
       <RouteTransitionTemplate preset={presets.slideLeft} {...this.props}>
         <div className="page">
@@ -35,8 +47,7 @@ class About extends Component {
             <div className="about group">
             <img className="head_img" src="./images/jason-sq.jpg" alt="Jason Awbrey" />
               <div className="copy">
-                <p>Heralded as having “one of the most gorgeous baritones on earth” by The Dallas Morning News, baritone Jason Awbrey is a Grammy<sup>&reg;</sup> nominated professional soloist and choral artist. His lyric voice has garnered critical acclaim for his performances of literature ranging from the early Renaissance period through the 21th century. In a recent recital of German lieder with Voces Intimae, Scott Cantrell of The Dallas Morning News states “everything sounded so easy, so natural” and “[it] was sheer magic.”</p>
-                <p>He has performed with professional ensembles throughout the United States, Mexico, and Europe, including Ars Lyrica of Houston, Grammy<sup>&reg;</sup> award-winning ensembles Conspirare and Roomful of Teeth, Dallas Bach Society, Dallas Symphony, Northeast Symphony, The Orchestra of New Spain, Orpheus Chamber Singers, Rapides Symphony Orchestra, San Antonio Symphony, Santa Fe Desert Chorale, Texas Camerata and Vox Humana. Jason has recorded with Vox Humana on the Naxos label, Orpheus Chamber Singers, and Conspirare on the Harmonia Mundi label.</p>
+                <span dangerouslySetInnerHTML={{__html: this.state.bio}} />
                 <div className="quotes">
                   <h2 className="title">Press</h2>
                   <QuoteList feed={this.state.quotes} />
@@ -54,7 +65,7 @@ class About extends Component {
 class QuoteList extends Component {
   render() {
     const quote = this.props.feed.map((stream, i) => {
-      return <blockquote className="container--quote"><span>{stream.quote}<br /><cite>{stream.cite}</cite></span></blockquote>
+      return <blockquote className="container--quote"><span>{stream.fields.quote}<br /><cite>{stream.fields.cite}</cite></span></blockquote>
     });
     return (
       <div>

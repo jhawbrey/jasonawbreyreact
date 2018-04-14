@@ -16,30 +16,32 @@ class Schedule extends Component {
 
 
   componentDidMount(){
-    fetch('./schedule.json')
+    fetch('https://cdn.contentful.com/spaces/lfibhjwf8l76/entries?access_token=ac626e994db36e47fed21fc5d5b5c2019df79ac53a77d06ee13b3163ef7af3a0&content_type=organization')
     .then((response) => response.json())
     .then((responseData) => {
 
       let concerts = [];
       let pastConcerts = [];
+      let items = responseData.items;
+      console.log(items);
 
-      for (var i = 0; i < responseData.length; i++) {
-        let cDate = new Date(responseData[i].timestamp);
+      for (var i = 0; i < items.length; i++) {
+        let cDate = new Date(items[i].fields.timestamp);
         const today = new Date();
         if (cDate > today) {
-          concerts.push(responseData[i]);
+          concerts.push(items[i]);
         } else {
-          pastConcerts.push(responseData[i]);
+          pastConcerts.push(items[i]);
         }
       }
 
 
       pastConcerts.sort(function(a,b){
-        return new Date(b.timestamp) - new Date(a.timestamp);
+        return new Date(b.fields.timestamp) - new Date(a.fields.timestamp);
       });
 
       concerts.sort(function(a,b){
-        return new Date(a.timestamp) - new Date(b.timestamp);
+        return new Date(a.fields.timestamp) - new Date(b.fields.timestamp);
       });
 
       this.setState({dates: concerts, pastDates: pastConcerts});
@@ -82,12 +84,12 @@ class DateContainer extends Component {
   render() {
     const performance = this.props.feed.map((perf, i) => {
       return <div className="dateBox group" key={i}>
-        <div className="dateBox_date">{perf.date}<br /><i>{perf.time}</i></div>
+        <div className="dateBox_date">{perf.fields.date}<br /><i>{perf.fields.time}</i></div>
         <div className="dateBox_perfDetails">
-        <span className="perfDetail perfOrg">{perf.organization}</span>
-          <span className="perfDetail perfOrg">{perf.title}</span>
-          <span className="perfDetail perfVenue">{perf.venue}</span>
-          <span className="perfDetail perfCitySt"><i>{perf.city}, {perf.state}</i></span>
+        <span className="perfDetail perfOrg">{perf.fields.organization}</span>
+          <span className="perfDetail perfOrg">{perf.fields.title}</span>
+          <span className="perfDetail perfVenue">{perf.fields.venue}</span>
+          <span className="perfDetail perfCitySt"><i>{perf.fields.city}, {perf.fields.state}</i></span>
         </div>
       </div>
     });
@@ -104,12 +106,12 @@ class PastContainer extends Component {
   render() {
     const performance = this.props.feed.map((perf, i) => {
       return <div className="dateBox group past" key={i}>
-        <div className="dateBox_date">{perf.date}<br /><i>{perf.time}</i></div>
+        <div className="dateBox_date">{perf.fields.date}<br /><i>{perf.fields.time}</i></div>
         <div className="dateBox_perfDetails">
-        <span className="perfDetail perfOrg">{perf.organization}</span>
-          <span className="perfDetail perfOrg">{perf.title}</span>
-          <span className="perfDetail perfVenue">{perf.venue}</span>
-          <span className="perfDetail perfCitySt"><i>{perf.city}, {perf.state}</i></span>
+        <span className="perfDetail perfOrg">{perf.fields.organization}</span>
+          <span className="perfDetail perfOrg">{perf.fields.title}</span>
+          <span className="perfDetail perfVenue">{perf.fields.venue}</span>
+          <span className="perfDetail perfCitySt"><i>{perf.fields.city}, {perf.fields.state}</i></span>
         </div>
       </div>
     });
