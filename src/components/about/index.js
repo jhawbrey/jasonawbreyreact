@@ -34,7 +34,6 @@ class About extends Component {
     });
   }
   render() {
-    console.log(this.state.quotes);
     return (
       <RouteTransitionTemplate preset={presets.slideLeft} {...this.props}>
         <div className="page">

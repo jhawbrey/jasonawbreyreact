@@ -23,7 +23,6 @@ class Schedule extends Component {
       let concerts = [];
       let pastConcerts = [];
       let items = responseData.items;
-      console.log(items);
 
       for (var i = 0; i < items.length; i++) {
         let cDate = new Date(items[i].fields.timestamp);

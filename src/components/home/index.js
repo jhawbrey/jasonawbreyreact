@@ -37,7 +37,6 @@ class Home extends Component {
       for (var i = 0; i < items.length; i++) {
         let cDate = new Date(items[i].fields.timestamp);
         const today = new Date();
-        console.log(cDate);
         if (cDate > today) {
           concert = items[i].fields;
           break;
@@ -51,7 +50,6 @@ class Home extends Component {
   }
 
   render() {
-    console.log(this.state.date);
     return (
       <RouteTransitionTemplate preset={presets.pop} {...this.props}>
         <div className="page">
@@ -78,7 +76,6 @@ class NextConcert extends Component {
   
   render() {
     const perf = this.props.feed;
-    console.log(perf);
     return (<div className="gridBox gridBox__meyerson-full">
       <div className="gridBox-overlay">
         <h2 className="title">Next<br />Concert</h2>
