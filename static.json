@@ -1,8 +1,0 @@
-{
-  "root": "build/",
-  "headers": {
-    "/**": {
-      "Cache-Control": "max-age=86400"
-    }
-  }
-}
