@@ -76,8 +76,6 @@ class NextConcert extends Component {
   render() {
     const perf = this.props.feed;
     return (
-    <div>
-      {perf.date &&
         <div className="gridBox gridBox__meyerson-full">
           <div className="gridBox-overlay">
             <h2 className="title">Next<br />Concert</h2>
@@ -92,7 +90,6 @@ class NextConcert extends Component {
                 <a href={perf.map} target="_blank" className="cta-button button__light">View Map</a>
               </div>
             </div>
-          }
           {this.props.feed.length === 0 &&
             <div>
               <p>
@@ -104,9 +101,7 @@ class NextConcert extends Component {
             </div>
           }
           </div>
-        </div>
-      }
-    </div>);
+        </div>);
   }
 }
 
