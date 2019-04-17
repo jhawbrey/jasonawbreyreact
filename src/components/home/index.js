@@ -18,7 +18,7 @@ class Home extends Component {
   }
 
   componentDidMount(){
-    fetch('https://cdn.contentful.com/spaces/lfibhjwf8l76/entries?access_token=ac626e994db36e47fed21fc5d5b5c2019df79ac53a77d06ee13b3163ef7af3a0&content_type=organization')
+    fetch('https://cdn.contentful.com/spaces/lfibhjwf8l76/entries?access_token=ac626e994db36e47fed21fc5d5b5c2019df79ac53a77d06ee13b3163ef7af3a0&content_type=organization&order=fields.timestamp')
     .then((response) => response.json())
     .then((responseData) => {
       let items = responseData.items;
@@ -80,17 +80,8 @@ class NextConcert extends Component {
           <div className="gridBox-overlay">
             <h2 className="title">Next<br />Concert</h2>
           
-            <div>
-              <p className="gridBox__p">
-              <i>{perf.date} @ {perf.time}</i><br />
-              {perf.title} <br />
-              {perf.organization}
-              </p>
-              <div className="cta__container">
-                <a href={perf.map} target="_blank" className="cta-button button__light">View Map</a>
-              </div>
-            </div>
-          {this.props.feed.length === 0 &&
+            
+          {this.props.feed.length === 0 ? (
             <div>
               <p>
                 <i>Check back soon for upcoming events.</i>
@@ -99,6 +90,18 @@ class NextConcert extends Component {
                 <a href="/schedule" target="_blank" className="cta-button button__light">Past Events</a>
               </div>
             </div>
+            ) : (
+              <div>
+                <p className="gridBox__p">
+                  <i>{perf.date} @ {perf.time}</i><br />
+                  {perf.title} <br />
+                  {perf.organization}
+                </p>
+                <div className="cta__container">
+                  <a href={perf.map} target="_blank" className="cta-button button__light">View Map</a>
+                </div>
+              </div>
+            )
           }
           </div>
         </div>);
@@ -138,7 +141,7 @@ class PlayerContainer extends Component {
   render() {
     return (
       <div>
-        <SoundPlayerContainer streamUrl='https://api.soundcloud.com/tracks/378472529/stream' clientId={clientId} className='group'>
+        <SoundPlayerContainer streamUrl='https://api.soundcloud.com/tracks/277988890/stream' clientId={clientId} className='group'>
           <Player />
         </SoundPlayerContainer>
       </div>
@@ -158,8 +161,8 @@ class Player extends Component {
         return (
             <div className="">
               <div className="flex-auto">
-                <p className="audio__title">Fantasia Christmas Carols<br />
-                  <span className="audio__composer"><i>Ralph Vaughan Williams</i></span>
+                <p className="audio__title">BWV 117: Wenn Trost und Hülf ermangeln muß<br />
+                  <span className="audio__composer"><i>J.S Bach</i></span>
                 </p>
               </div>
               <PlayButton className="button black btn-big button-outline button-grow bg-white circle" {...this.props} />
