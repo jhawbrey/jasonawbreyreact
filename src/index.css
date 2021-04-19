@@ -1,7 +1,7 @@
-
-html, body {
+html,
+body {
   background-color: #f3f3f3;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1em;
   line-height: 1.625em;
   margin: 0;
@@ -13,11 +13,8 @@ a {
 }
 
 i {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
-
-
-
 
 /**************************************/
 /************ menu styles *************/
@@ -37,7 +34,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #c94e50;
+  color: #fff;
 }
 main {
   height: 100%;
@@ -147,7 +144,7 @@ h1 {
 }
 .bm-item-list a {
   padding: 0.8em;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 .bm-item-list a span {
   margin-left: 10px;
