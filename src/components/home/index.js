@@ -14,7 +14,6 @@ class Home extends Component {
     super();
     this.state = {
       date: [],
-      track: [],
     };
   }
 
@@ -46,26 +45,6 @@ class Home extends Component {
           }
         }
         this.setState({ date: concert });
-      })
-      .catch((error) => {
-        console.log("Error fetching and parsing data", error);
-      });
-
-    fetch(
-      "https://cdn.contentful.com/spaces/lfibhjwf8l76/entries?access_token=ac626e994db36e47fed21fc5d5b5c2019df79ac53a77d06ee13b3163ef7af3a0&content_type=audio"
-    )
-      .then((response) => response.json())
-      .then((responseData) => {
-        let items = responseData.items;
-        let track = null;
-
-        for (var i = 0; i < items.length; i++) {
-          if (items[i].fields.hpTrack === true) {
-            track = items[i].fields;
-            break;
-          }
-        }
-        this.setState({ track: track });
       })
       .catch((error) => {
         console.log("Error fetching and parsing data", error);
@@ -206,7 +185,7 @@ class PlayerContainer extends Component {
     return (
       <div>
         <SoundPlayerContainer
-          streamUrl="https://api.soundcloud.com/tracks/100312444/stream"
+          streamUrl="https://api.soundcloud.com/tracks/320439670/stream"
           clientId={clientId}
           className="group"
         >
@@ -229,10 +208,10 @@ class Player extends Component {
       <div className="">
         <div className="flex-auto">
           <p className="audio__title">
-            A Spotless Rose
+            Chanson Romanesque
             <br />
             <span className="audio__composer">
-              <i>Herbert Howells</i>
+              <i>Maurice Ravel</i>
             </span>
           </p>
         </div>
