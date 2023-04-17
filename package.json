@@ -9,7 +9,7 @@
   "homepage": "https://jhawbrey.github.io",
   "devDependencies": {
     "gh-pages": "^0.12.0",
-    "react-scripts": "0.5.1"
+    "react-scripts": "5.0.1"
   },
   "dependencies": {
     "react": "^15.6.2",
